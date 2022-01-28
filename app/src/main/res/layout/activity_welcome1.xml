@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    tools:context=".activities.WelcomeActivity1">
+
+    <ImageView
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_260sdp"
+        android:src="@drawable/ic_circle_b"
+        android:layout_marginStart="@dimen/_110sdp"
+        android:layout_marginBottom="@dimen/_450sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:src="@drawable/logo_font"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_320sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/intro_letter"
+        app:layout_constraintTop_toBottomOf="@id/iv"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:id="@+id/indicatorView"
+        android:layout_width="@dimen/_9sdp"
+        android:layout_height="@dimen/_9sdp"
+        android:background="@drawable/indicator"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/iv2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:layout_width="@dimen/_7sdp"
+        android:layout_height="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_135sdp"
+        android:background="@drawable/indicator"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/iv2"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_43sdp"
+        android:elevation="30dp"
+        android:shadowColor="@color/blue"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11ssp"
+        app:cornerRadius="@dimen/_8sdp"
+        app:elevation="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@+id/iv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/_1sdp" />
+
+    <ImageView
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_290sdp"
+        android:src="@drawable/ic_circle_b"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toStartOf="@id/btn_next"
+        app:layout_constraintTop_toBottomOf="@+id/btn_next"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_240sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_110sdp"
+        android:src="@drawable/ic_circle_a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_next" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

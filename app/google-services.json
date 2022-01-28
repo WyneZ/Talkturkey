@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1014041653050",
+    "project_id": "talkturkey-56cb8",
+    "storage_bucket": "talkturkey-56cb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014041653050:android:9f8d90aa930df40249aa03",
+        "android_client_info": {
+          "package_name": "com.example.talkturkey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014041653050-23e432ogqjoiuiueosdbr9ijgn8312hl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaea0UcHk5ibR9EMngZzD5afnQivBRUvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014041653050-23e432ogqjoiuiueosdbr9ijgn8312hl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".activities.SignInActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="Phone number"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/iv"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/et_background"
+        android:elevation="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvemail"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintTop_toBottomOf="@+id/etemail"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/etpw"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/et_background"
+        android:padding="@dimen/_5sdp"
+        android:elevation="@dimen/_10sdp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvpw"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="@dimen/_72sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="@string/log_in"
+        android:textSize="@dimen/_10ssp"
+        android:elevation="@dimen/_20sdp"
+        android:background="@drawable/welcome_btn_shadow"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/etpw"
+        app:layout_constraintStart_toStartOf="@+id/etpw"
+        app:layout_constraintEnd_toEndOf="@+id/etpw"/>
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintTop_toBottomOf="@id/btn_Login"
+        app:layout_constraintStart_toStartOf="@id/btn_Login"
+        app:layout_constraintEnd_toEndOf="@id/btn_Login"
+        />
+
+    <Button
+        android:id="@+id/btn_Signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/sign_up"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/white"
+        android:elevation="@dimen/_20sdp"
+        android:background="@drawable/btn_background"
+        app:tint="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/or"
+        app:layout_constraintStart_toStartOf="@+id/btn_Login"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create account?"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Signup"
+        app:layout_constraintStart_toStartOf="@+id/btn_Signup"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Signup"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:src="@drawable/logo_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
