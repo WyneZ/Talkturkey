@@ -17,19 +17,19 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:id="@+id/tvemail"
+        android:id="@+id/tv_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_30sdp"
         android:layout_marginStart="@dimen/_20sdp"
-        android:text="Phone number"
+        android:text="Email"
         android:textSize="@dimen/_12ssp"
         android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/iv"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <EditText
-        android:id="@+id/etemail"
+        android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
         android:layout_marginTop="@dimen/_7sdp"
@@ -38,12 +38,15 @@
         android:background="@drawable/et_background"
         android:elevation="@dimen/_10sdp"
         android:padding="@dimen/_5sdp"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/tvemail"
+        app:layout_constraintTop_toBottomOf="@id/tv_email"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:id="@+id/tvpw"
+        android:id="@+id/tv_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_20sdp"
@@ -51,11 +54,11 @@
         android:text="Password"
         android:textColor="@color/white"
         android:textSize="@dimen/_12ssp"
-        app:layout_constraintTop_toBottomOf="@+id/etemail"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <EditText
-        android:id="@+id/etpw"
+        android:id="@+id/et_pw"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
         android:layout_marginTop="@dimen/_7sdp"
@@ -64,23 +67,27 @@
         android:background="@drawable/et_background"
         android:padding="@dimen/_5sdp"
         android:elevation="@dimen/_10sdp"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/tvpw"
+        app:layout_constraintTop_toBottomOf="@id/tv_pw"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
         android:id="@+id/btn_Login"
         android:layout_width="@dimen/_72sdp"
-        android:layout_height="@dimen/_35sdp"
+        android:layout_height="@dimen/_32sdp"
         android:layout_marginTop="@dimen/_40sdp"
         android:text="@string/log_in"
         android:textSize="@dimen/_10ssp"
+        android:textColor="@color/white"
         android:elevation="@dimen/_20sdp"
-        android:background="@drawable/welcome_btn_shadow"
-        android:backgroundTint="@color/blue"
-        app:layout_constraintTop_toBottomOf="@+id/etpw"
-        app:layout_constraintStart_toStartOf="@+id/etpw"
-        app:layout_constraintEnd_toEndOf="@+id/etpw"/>
+        android:background="@drawable/btn_background"
+        app:tint="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/et_pw"
+        app:layout_constraintStart_toStartOf="@+id/et_pw"
+        app:layout_constraintEnd_toEndOf="@+id/et_pw"/>
 
     <TextView
         android:id="@+id/or"
@@ -97,8 +104,8 @@
 
     <Button
         android:id="@+id/btn_Signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_72sdp"
+        android:layout_height="@dimen/_32sdp"
         android:layout_marginTop="@dimen/_5sdp"
         android:text="@string/sign_up"
         android:textSize="@dimen/_10ssp"
@@ -127,5 +134,15 @@
         android:src="@drawable/logo_font"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/pbOfSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

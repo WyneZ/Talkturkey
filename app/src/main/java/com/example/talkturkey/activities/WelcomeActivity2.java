@@ -21,7 +21,10 @@ public class WelcomeActivity2 extends AppCompatActivity {
         btn_back = findViewById(R.id.btn_back);
         btn_next = findViewById(R.id.btn_next);
 
-        btn_next.setOnClickListener(v -> startActivity(new Intent(WelcomeActivity2.this, SignInActivity.class)));
+        btn_next.setOnClickListener(v -> {
+            startActivity(new Intent(WelcomeActivity2.this, SignInActivity.class));
+            finish();
+        });
 
         btn_back.setOnClickListener(v -> {
             startActivity(new Intent(WelcomeActivity2.this, WelcomeActivity1.class));

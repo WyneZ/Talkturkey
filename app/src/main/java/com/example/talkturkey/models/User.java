@@ -1,14 +1,15 @@
 package com.example.talkturkey.models;
 
-public class User {
+import java.io.Serializable;
 
-    private int id;
-    private String name, email, image, token;
+public class User implements Serializable {
+
+    private String id, name, email, image, token;
 
     public User() {
     }
 
-    public User(int id, String name, String email, String image, String token) {
+    public User(String id, String name, String email, String image, String token) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -16,11 +17,11 @@ public class User {
         this.token = token;
     }
 
-    public int getId(){
+    public String getId(){
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

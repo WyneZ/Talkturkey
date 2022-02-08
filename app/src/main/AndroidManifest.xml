@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.talkturkey">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,17 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Talkturkey">
         <activity
+            android:name=".activities.InputPpActivity"
+            android:exported="true" />
+        <activity
             android:name=".activities.ChatActivity"
             android:exported="true" />
         <activity
             android:name=".activities.SearchActivity"
+            android:theme="@style/AppTheme.Transparent"
+            android:launchMode="singleTask"
             android:exported="true" />
-        <activity
-            android:name=".activities.WelcomeActivity2"
-            android:exported="true" />
-        <activity
-            android:name=".activities.WelcomeActivity1"
-            android:exported="true" />
+
+        <activity android:name=".activities.WelcomeActivity1"
+            android:exported="true"/>
+
+        <activity android:name=".activities.WelcomeActivity2"
+            android:exported="true"/>
+
         <activity
             android:name=".activities.AuthCodeActivity"
             android:exported="true" />

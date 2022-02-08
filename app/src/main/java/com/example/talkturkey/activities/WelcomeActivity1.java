@@ -23,7 +23,6 @@ public class WelcomeActivity1 extends AppCompatActivity {
         btn_next.setOnClickListener(v -> {
             startActivity(new Intent(WelcomeActivity1.this, WelcomeActivity2.class));
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-            //finish();
         });
     }
 }

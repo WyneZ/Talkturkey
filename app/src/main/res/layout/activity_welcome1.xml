@@ -61,7 +61,6 @@
         android:id="@+id/btn_next"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/_43sdp"
-        android:elevation="30dp"
         android:shadowColor="@color/blue"
         android:text="Next"
         android:textColor="@color/white"

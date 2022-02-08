@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/iv_rImg"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/test"
@@ -28,17 +29,18 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/tvReceiveMessage"
+        android:id="@+id/tv_rMsg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/background_send_message"
+        android:backgroundTint="@android:color/darker_gray"
         android:text="How are you? 12345"
         android:layout_marginStart="@dimen/_4sdp"
         android:paddingStart="@dimen/_10sdp"
         android:paddingEnd="@dimen/_10sdp"
         android:paddingTop="@dimen/_4sdp"
         android:paddingBottom="@dimen/_4sdp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/_11ssp"
         app:layout_constraintStart_toEndOf="@+id/imageProfile"
         app:layout_constraintTop_toTopOf="parent"
@@ -46,15 +48,14 @@
         app:layout_constraintWidth_percent="0.75" />
 
     <TextView
-        android:id="@+id/tvReceiverDateTime"
+        android:id="@+id/tv_rDateTime"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_4sdp"
         android:textColor="@android:color/darker_gray"
         android:textSize="@dimen/_8ssp"
         android:text="11:11:11 PM"
-        app:layout_constraintStart_toStartOf="@+id/tvReceiveMessage"
-        app:layout_constraintTop_toBottomOf="@+id/tvReceiveMessage"/>
-
+        app:layout_constraintStart_toStartOf="@+id/tv_rMsg"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rMsg"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
